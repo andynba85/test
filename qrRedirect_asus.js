@@ -31,14 +31,14 @@ function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
 
     function goToAppStore() {
         //window.location.href = `itms-apps://itunes.apple.com/app/id${appStoreAppId}`;
-        //window.location.href = "link-to-myasus://";
-        window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
+        window.location.href = "linktomyasus://";
+        //window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
         setTimeout(function(){
 
             window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
             window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;  //爲什麼要加兩遍我下面會說到
 
-        },2000)
+        },3000)
         //window.location.href = `itms-apps://itunes.apple.com/app/id${appStoreAppId}`;
     }
 
