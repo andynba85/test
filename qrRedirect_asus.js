@@ -51,7 +51,7 @@ function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
 
     function goToPCStore() {
         //window.location.href = `https://www.microsoft.com/en-us/p/${MsStoreID}`;
-        window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
+        window.location.href = `https://www.microsoft.com/en-us/p/${MsStoreID}`;
     }
 
     function goToStore() {
