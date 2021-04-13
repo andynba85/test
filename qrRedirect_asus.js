@@ -30,7 +30,8 @@ function goToAppStore() {
 function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
 
     function goToAppStore() {
-        window.location.href = "link-to-myasus://";
+        window.location.href = `itms-apps://itunes.apple.com/app/id${appStoreAppId}`;
+        //window.location.href = "link-to-myasus://";
         setTimeout(function(){
 
             window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
