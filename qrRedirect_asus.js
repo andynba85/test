@@ -21,11 +21,6 @@ function getOs() {
     return "PC";
 }
 
-function goToAppStore() {
-    window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
-    //window.location.href = `itms-apps://itunes.apple.com/app/id${appStoreAppId}`;
-}
-
 
 function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
 
@@ -38,13 +33,18 @@ function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
             window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;
             window.location.href = `itms-apps://apps.apple.com/us/app/link-to-myasus/id${appStoreAppId}`;  //爲什麼要加兩遍我下面會說到
 
-        },3000)
+        },2000)
         //window.location.href = `itms-apps://itunes.apple.com/app/id${appStoreAppId}`;
     }
 
     function goToAndroidStore() {
-        window.location.href = `market://details?id=${flavor}`;
-        //window.location.href = `https://lambdaproxy.screenovate.com/regionhandler?flavor=${flavor}`;
+        window.location.href = "linktomyasus://";
+        setTimeout(function(){
+
+            window.location.href = `market://details?id=${flavor}`;
+            window.location.href = `market://details?id=${flavor}`;
+
+        },2000)
     }
     
     function goToWeChat() {
@@ -53,7 +53,6 @@ function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
 
 
     function goToPCStore() {
-        //window.location.href = `https://www.microsoft.com/en-us/p/${MsStoreID}`;
         window.location.href = `https://www.microsoft.com/en-us/p/${MsStoreID}`;
     }
 
