@@ -41,8 +41,8 @@ function reportAndNavigate(flavor, appStoreAppId, MsStoreID, weChatUrl) {
         window.location.href = "linktomyasus://";
         setTimeout(function(){
 
-            window.location.href = `market://details?id=${flavor}`;
-            window.location.href = `market://details?id=${flavor}`;
+            window.location.href = `https://play.google.com/store/apps/details?id=${flavor}`;
+            window.location.href = `https://play.google.com/store/apps/details?id=${flavor}`;
 
         },2000)
     }
